@@ -10,4 +10,9 @@ class TestTrial {
     void test() {
         assertEquals(6, 6);
     }
+
+    @Test
+    void testWithErrorMessage() {
+        assertEquals(7, 8, ()-> "Optional error message"); 
+    }
 }
