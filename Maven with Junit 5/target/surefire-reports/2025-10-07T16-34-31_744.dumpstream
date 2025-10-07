@@ -1,5 +1,0 @@
-# Created at 2025-10-07T16:34:31.969
-Boot Manifest-JAR contains absolute paths in classpath 'D:\personal\React Projects\Java Development\Maven with Junit 5\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-

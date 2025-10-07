@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.telusko.learning.TestTrial" time="0.015" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.telusko.learning.TestAssertTrueFalse" time="0.105" tests="12" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,8 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\Aditya Poojary\AppData\Local\Temp\surefire3848030968997900231\surefirebooter-20251007170027872_3.jar C:\Users\Aditya Poojary\AppData\Local\Temp\surefire3848030968997900231 2025-10-07T17-00-27_658-jvmRun1 surefire-20251007170027872_1tmp surefire_0-20251007170027872_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Aditya Poojary\AppData\Local\Temp\surefire9465133629613306332\surefirebooter-20251007173105752_3.jar C:\Users\Aditya Poojary\AppData\Local\Temp\surefire9465133629613306332 2025-10-07T17-31-05_611-jvmRun1 surefire-20251007173105752_1tmp surefire_0-20251007173105752_2tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="TestAssertTrueFalse"/>
     <property name="surefire.test.class.path" value="D:\personal\React Projects\Java Development\Maven with Junit 5\target\test-classes;D:\personal\React Projects\Java Development\Maven with Junit 5\target\classes;C:\Users\Aditya Poojary\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\Aditya Poojary\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\Aditya Poojary\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Aditya Poojary\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\Aditya Poojary\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Aditya Poojary\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\Aditya Poojary\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\Aditya Poojary\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Aditya Poojary"/>
@@ -30,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Aditya Poojary\AppData\Local\Temp\surefire3848030968997900231\surefirebooter-20251007170027872_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Aditya Poojary\AppData\Local\Temp\surefire9465133629613306332\surefirebooter-20251007173105752_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
@@ -58,18 +59,40 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="test" classname="com.telusko.learning.TestTrial" time="0.007"/>
-  <testcase name="testWithErrorMessage" classname="com.telusko.learning.TestTrial" time="0.003">
-    <failure message="Optional error message ==&gt; expected: &lt;7&gt; but was: &lt;8&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Optional error message ==> expected: <7> but was: <8>
+  <testcase name="testAssertFalse_StringEmpty_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.043"/>
+  <testcase name="testAssertTrue_StringNotEmpty_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.002"/>
+  <testcase name="testAssertTrue_MultipleConditions_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.001"/>
+  <testcase name="testEmailContainsAtSymbol_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.002"/>
+  <testcase name="testAssertFalse_NotNegative_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.0"/>
+  <testcase name="testDiscountEligibility_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.007"/>
+  <testcase name="testPasswordStrength_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.0"/>
+  <testcase name="testAssertFalse_NotNull_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.0"/>
+  <testcase name="testAssertFalse_Fail" classname="com.telusko.learning.TestAssertTrueFalse" time="0.01">
+    <failure message="Expected number to NOT be greater than 10, but got: 15 ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected number to NOT be greater than 10, but got: 15 ==> expected: <false> but was: <true>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:156)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:598)
-	at com.telusko.learning.TestTrial.testWithErrorMessage(TestTrial.java:16)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at com.telusko.learning.TestAssertTrueFalse.testAssertFalse_Fail(TestAssertTrueFalse.java:84)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ]]></failure>
   </testcase>
+  <testcase name="testAssertFalse_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.001"/>
+  <testcase name="testAssertTrue_Fail" classname="com.telusko.learning.TestAssertTrueFalse" time="0.003">
+    <failure message="Expected number to be greater than 5, but got: 3 ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Expected number to be greater than 5, but got: 3 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.telusko.learning.TestAssertTrueFalse.testAssertTrue_Fail(TestAssertTrueFalse.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+]]></failure>
+  </testcase>
+  <testcase name="testAssertTrue_Pass" classname="com.telusko.learning.TestAssertTrueFalse" time="0.001"/>
 </testsuite>
