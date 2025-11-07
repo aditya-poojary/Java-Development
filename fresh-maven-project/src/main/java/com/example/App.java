@@ -22,7 +22,7 @@ public class App {
                  
                  // First: INSERT the new record
                  try (PreparedStatement st = con.prepareStatement(insert)) {
-                     st.setInt(1, 7);
+                     st.setInt(1, 8);  // Changed from 7 to 8
                      st.setString(2, "Bot");
                      st.setQueryTimeout(5);
                      int count = st.executeUpdate();

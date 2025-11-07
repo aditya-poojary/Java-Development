@@ -1,4 +1,4 @@
-# database-connection
+# fresh-maven-project
 
 A tiny Maven Java project created automatically.
 
@@ -6,7 +6,7 @@ Quick commands (PowerShell on Windows):
 
 ```powershell
 # from repository root
-cd "d:\personal\React Projects\Java Development\database-connection"
+cd "d:\personal\React Projects\Java Development\fresh-maven-project"
 # check maven
 mvn -v
 # compile & package (skip tests to speed up if desired)
