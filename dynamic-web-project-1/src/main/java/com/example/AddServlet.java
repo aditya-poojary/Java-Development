@@ -9,17 +9,41 @@ import javax.servlet.http.HttpServletResponse;
 
 public class AddServlet extends HttpServlet{
 
-    public void service (HttpServletRequest req, HttpServletResponse res) throws IOException{
+    // public void service (HttpServletRequest req, HttpServletResponse res) throws IOException{
+    //     int i = Integer.parseInt(req.getParameter("num1"));
+    //     int j = Integer.parseInt(req.getParameter("num2"));
+
+    //     int k = i + j;
+
+    //     PrintWriter out = res.getWriter();
+    //     out.println(k);
+
+    //     //res.getWriter().println(k);  can be used instead of out
+
+    // }
+
+    public void doPost (HttpServletRequest req, HttpServletResponse res) throws IOException {
         int i = Integer.parseInt(req.getParameter("num1"));
         int j = Integer.parseInt(req.getParameter("num2"));
 
-        int k = i + j;
+        int k = i * j;
 
         PrintWriter out = res.getWriter();
         out.println(k);
 
-        //res.getWriter().println(k);  can be used instead of out
+        //res.getWriter().println(k);
+    }
 
+    public void doGet (HttpServletRequest req, HttpServletResponse res) throws IOException {
+        int i = Integer.parseInt(req.getParameter("num1"));
+        int j = Integer.parseInt(req.getParameter("num2"));
+
+        int k = i / j;
+
+        PrintWriter out = res.getWriter();
+        out.println(k);
+
+        //res.getWriter().println(k);
     }
     
 }
