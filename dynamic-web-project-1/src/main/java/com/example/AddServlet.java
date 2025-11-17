@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class AddServlet extends HttpServlet{
 
@@ -50,14 +51,30 @@ public class AddServlet extends HttpServlet{
     //     //res.getWriter().println(k);
     // }
 
-        public void doGet (HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+    //     public void doGet (HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+    //     int i = Integer.parseInt(req.getParameter("num1"));
+    //     int j = Integer.parseInt(req.getParameter("num2"));
+
+    //     int k = i + j;
+
+    //     // Redirect with the sum as a query parameter so SqServlet can compute its square
+    //     res.sendRedirect("sq?k=" + k);
+    //     // Forward to SqServlet to get the square
+    //     // RequestDispatcher rd = req.getRequestDispatcher("sq");
+    //     // rd.forward(req, res);
+    // }
+
+            public void doGet (HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
         int i = Integer.parseInt(req.getParameter("num1"));
         int j = Integer.parseInt(req.getParameter("num2"));
 
         int k = i + j;
 
+        HttpSession session = req.getSession();
+
+        session.setAttribute("k", k);
         // Redirect with the sum as a query parameter so SqServlet can compute its square
-        res.sendRedirect("sq?k=" + k);
+        res.sendRedirect("sq");
         // Forward to SqServlet to get the square
         // RequestDispatcher rd = req.getRequestDispatcher("sq");
         // rd.forward(req, res);
