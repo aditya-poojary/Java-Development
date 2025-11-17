@@ -23,5 +23,15 @@
         <servlet-name>AddServlet</servlet-name>
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SqServlet</servlet-name>
+        <servlet-class>com.example.SqServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SqServlet</servlet-name>
+        <url-pattern>/sq</url-pattern>
+    </servlet-mapping>
 
 </web-app>

@@ -1,3 +1,4 @@
 com\example\HelloServlet.class
 com\example\TimeServlet.class
+com\example\SqServlet.class
 com\example\AddServlet.class

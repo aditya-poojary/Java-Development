@@ -46,9 +46,9 @@ pageEncoding="UTF-8"%>
         <a href="hello?name=Java">Call with Parameter</a>
       </div>
 
-      <div class="form-box" method = "post">
+      <div class="form-box">
         <h2>Addition Calculator</h2>
-        <form action="add">
+        <form action="add" method="post">
           Enter 1st number: <input type="text" name="num1" />
           <br />
           Enter 2nd number: <input type="text" name="num2" />

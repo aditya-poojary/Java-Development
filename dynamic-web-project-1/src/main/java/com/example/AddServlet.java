@@ -3,6 +3,8 @@ package com.example;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,28 +24,30 @@ public class AddServlet extends HttpServlet{
 
     // }
 
-    public void doPost (HttpServletRequest req, HttpServletResponse res) throws IOException {
+    public void doPost (HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
         int i = Integer.parseInt(req.getParameter("num1"));
         int j = Integer.parseInt(req.getParameter("num2"));
 
-        int k = i * j;
+        int k = i + j;
 
-        PrintWriter out = res.getWriter();
-        out.println(k);
+        // Set the sum as an attribute to pass to SqServlet
+        req.setAttribute("k", k);
 
-        //res.getWriter().println(k);
+        // Forward to SqServlet to get the square
+        RequestDispatcher rd = req.getRequestDispatcher("sq");
+        rd.forward(req, res);
     }
 
-    public void doGet (HttpServletRequest req, HttpServletResponse res) throws IOException {
-        int i = Integer.parseInt(req.getParameter("num1"));
-        int j = Integer.parseInt(req.getParameter("num2"));
+    // public void doGet (HttpServletRequest req, HttpServletResponse res) throws IOException {
+    //     int i = Integer.parseInt(req.getParameter("num1"));
+    //     int j = Integer.parseInt(req.getParameter("num2"));
 
-        int k = i / j;
+    //     int k = i / j;
 
-        PrintWriter out = res.getWriter();
-        out.println(k);
+    //     PrintWriter out = res.getWriter();
+    //     out.println(k);
 
-        //res.getWriter().println(k);
-    }
+    //     //res.getWriter().println(k);
+    // }
     
 }
