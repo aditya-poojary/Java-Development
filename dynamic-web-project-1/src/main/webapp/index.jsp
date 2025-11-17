@@ -48,7 +48,7 @@ pageEncoding="UTF-8"%>
 
       <div class="form-box">
         <h2>Addition Calculator</h2>
-        <form action="add" method="post">
+        <form action="add" method="get">
           Enter 1st number: <input type="text" name="num1" />
           <br />
           Enter 2nd number: <input type="text" name="num2" />
