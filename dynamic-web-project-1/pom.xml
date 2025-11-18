@@ -70,6 +70,10 @@
                     <!-- Deploy the app under the artifactId-based context path so the URL will be /dynamic-web-project-1/ -->
                     <path>/dynamic-web-project-1</path>
                     <port>8080</port>
+                    <!-- Add JVM arguments to open Java modules for JSP compilation with Java 21 -->
+                    <systemProperties>
+                        <JAVA_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED</JAVA_OPTS>
+                    </systemProperties>
                 </configuration>
             </plugin>
         </plugins>

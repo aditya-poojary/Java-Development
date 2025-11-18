@@ -5,7 +5,7 @@
          http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <!-- <display-name>Dynamic Web Project 1</display-name>
+    <display-name>Dynamic Web Project 1</display-name>
     
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
@@ -13,27 +13,7 @@
     </welcome-file-list>
 
     <!-- Servlets are mapped using @WebServlet annotations in the Java classes -->
-    <!-- AddServlet needs mapping here since it doesn't have @WebServlet annotation -->
-    <servlet>
-        <servlet-name>AddServlet</servlet-name>
-        <servlet-class>com.example.AddServlet</servlet-class>
-    </servlet>
     
-    <servlet-mapping>
-        <servlet-name>AddServlet</servlet-name>
-        <url-pattern>/add</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>SqServlet</servlet-name>
-        <servlet-class>com.example.SqServlet</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>SqServlet</servlet-name>
-        <url-pattern>/sq</url-pattern>
-    </servlet-mapping>
-
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <servlet-class>com.example.MyServlet</servlet-class>
@@ -58,6 +38,6 @@
     <context-param>
         <param-name>Phone</param-name>
         <param-value>Oppo</param-value>
-    </context-param> -->
+    </context-param>
 
 </web-app>

@@ -13,27 +13,7 @@
     </welcome-file-list>
 
     <!-- Servlets are mapped using @WebServlet annotations in the Java classes -->
-    <!-- AddServlet needs mapping here since it doesn't have @WebServlet annotation -->
-    <servlet>
-        <servlet-name>AddServlet</servlet-name>
-        <servlet-class>com.example.AddServlet</servlet-class>
-    </servlet>
     
-    <servlet-mapping>
-        <servlet-name>AddServlet</servlet-name>
-        <url-pattern>/add</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>SqServlet</servlet-name>
-        <servlet-class>com.example.SqServlet</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>SqServlet</servlet-name>
-        <url-pattern>/sq</url-pattern>
-    </servlet-mapping>
-
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <servlet-class>com.example.MyServlet</servlet-class>
