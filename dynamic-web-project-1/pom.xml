@@ -67,7 +67,8 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <path>/</path>
+                    <!-- Deploy the app under the artifactId-based context path so the URL will be /dynamic-web-project-1/ -->
+                    <path>/dynamic-web-project-1</path>
                     <port>8080</port>
                 </configuration>
             </plugin>
