@@ -20,27 +20,33 @@
     </properties>
 
     <dependencies>
-        <!-- javax.servlet API for Tomcat 9 -->
+        <!-- Jakarta Servlet API (formerly javax.servlet) -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
             <scope>provided</scope>
         </dependency>
 
-        <!-- JSP API for Tomcat 9 -->
+        <!-- Jakarta JSP API -->
         <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.3</version>
+            <groupId>jakarta.servlet.jsp</groupId>
+            <artifactId>jakarta.servlet.jsp-api</artifactId>
+            <version>3.1.1</version>
             <scope>provided</scope>
         </dependency>
 
         <!-- JSTL for JSP -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>3.0.1</version>
         </dependency>
     </dependencies>
 
@@ -67,13 +73,8 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <!-- Deploy the app under the artifactId-based context path so the URL will be /dynamic-web-project-1/ -->
-                    <path>/dynamic-web-project-1</path>
+                    <path>/</path>
                     <port>8080</port>
-                    <!-- Add JVM arguments to open Java modules for JSP compilation with Java 21 -->
-                    <systemProperties>
-                        <JAVA_OPTS>--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED</JAVA_OPTS>
-                    </systemProperties>
                 </configuration>
             </plugin>
         </plugins>

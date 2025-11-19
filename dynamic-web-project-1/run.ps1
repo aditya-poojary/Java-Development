@@ -16,7 +16,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host ""
     Write-Host "Option 1: Run with embedded Tomcat (Maven plugin)" -ForegroundColor Yellow
     Write-Host "  Command: mvn tomcat7:run" -ForegroundColor White
-    Write-Host "  URL: http://localhost:8080/dynamic-web-project-1" -ForegroundColor White
+    Write-Host "  URL: http://localhost:8080" -ForegroundColor White
     Write-Host ""
     Write-Host "Option 2: Deploy to standalone Tomcat" -ForegroundColor Yellow
     Write-Host "  1. Copy target\dynamic-web-project-1.war to Tomcat's webapps folder" -ForegroundColor White

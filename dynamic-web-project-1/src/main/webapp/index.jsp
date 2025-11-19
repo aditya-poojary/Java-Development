@@ -45,17 +45,6 @@ pageEncoding="UTF-8"%>
         <a href="hello">Call HelloServlet</a> |
         <a href="hello?name=Java">Call with Parameter</a>
       </div>
-
-      <div class="form-box">
-        <h2>Addition Calculator</h2>
-        <form action="add.jsp" method="get">
-          Enter 1st number: <input type="text" name="num1" />
-          <br />
-          Enter 2nd number: <input type="text" name="num2" />
-          <br />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
     </div>
 
     <script src="js/script.js"></script>
